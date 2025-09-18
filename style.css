@@ -1,0 +1,508 @@
+
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;  
+}
+body{
+    background-color:rgb(25, 25, 41);
+    overflow-x: hidden;
+
+}
+/* .bhai{
+
+    background-image: ur("bhai1.png");
+} */
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(25, 25, 41);
+    z-index: 1;
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    text-align: center; 
+    justify-content:space-between;
+    position: fixed;
+
+}
+.name{
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.name h1:hover {
+    scale: 1.1;
+    transition: 0.2s;
+    color: #5e548e;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap:40px;
+    list-style: none;
+}
+ul li:hover{
+    color: #5e548e;
+    scale: 1.1;
+    transition: 0.2s;
+}
+.but{
+    padding: 5px 10px;
+    margin-right: 50px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px ;
+    background-color:  #5e548e;
+    transition: 0.2s;  
+    color: black; 
+}
+.but:hover{
+    scale: 1.05;
+    box-shadow:15px 15px  rgb(135, 54, 92) ;
+    color: rgb(84, 60, 60);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px ;
+}
+img{
+    z-index: -1;
+}
+a{
+    text-decoration: none;  
+}
+a:hover{
+    color: #5e548e;
+}
+.home{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    height: 90vh;
+    width: 40vw;
+}
+.home-left img{
+    height: 700px;
+    width: 500px;
+    /* border-radius: 50%; */
+    /* border: 5px solid rgb(248, 240, 240); */
+}
+.home-right{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    height: 90vh;
+    width: 60vw;
+}
+.home-content{
+    padding: 45px;
+    border: 2px solid grey;
+    width: 40vw;
+    border-radius: 35px;
+}
+.home-content:hover{
+    scale: 1.2s;
+    box-shadow:15px 15px  #5e548e;
+    color: white;
+    font-weight: bold;
+    border: 2px solid;
+}
+.home-content h1{
+    font-size: 50px;  
+}
+.home-content p{
+    text-align: justify;
+}
+.resume-but{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color:#5e548e ;
+    transition: 0.2s;
+    color: black;
+}
+.resume-but:hover{
+    scale: 1.05;
+    box-shadow:15px 15px  rgb(135, 54, 92) ;
+    color: rgb(84, 60, 60);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px ;
+}
+.heading{
+    height: 10ph;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1{
+    font-size: 50px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin-top: 20px;
+}
+.about-content{
+    padding: 20px;
+    height: 400px;
+    width: 800px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    transition: 0.2s;
+    margin-left: 45vh;
+}
+.about-content:hover{
+    scale: 1.05;
+    box-shadow:15px 15px  #5e548e;
+    color: white;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+}
+.services-grid{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns:auto auto auto;
+    gap: 150px;
+}
+.card{
+    height: 200px;
+    width:250px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-style: italic;
+    background-color: rgb(25, 25, 41);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid grey;
+    transition: 0.20s;
+    display:flex;
+}
+.card:hover{
+    scale: 1.05;
+    box-shadow:15px 15px  #5e548e;
+    border-radius: 5px;
+}
+.contact-me{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 50vw;
+    margin-top: 30px;
+}
+.contact-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 50vw;
+}
+.contact-connect{
+    align-items: justify;
+    width: 425px;
+}
+.contact-connect h1{
+    font-size: 55px;
+}
+.contact-connect p{
+    text-align: justify;
+    font-size: 20px;
+} 
+.social-links{
+    display: flex;
+    justify-content: space-between;
+}
+.social-links img{
+    border-radius:50% ;
+    width: 60px;
+}
+.contact-form{
+    border-radius: 50%;
+    height: 400px;
+    width: 300px;
+}
+textarea{
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    background: none;
+    border: 2px solid white;
+}
+input{
+    border-radius: 5px;
+    padding: 10px;
+    height: 30px;
+    width: 300px;
+    background: none;
+    border: 2px solid white;
+}
+footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: auto auto;
+        gap: 50px;
+        padding: 20px;
+    }
+    
+    .about-content {
+        width: 90%;
+        margin-left: 0;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction:column;
+        height: auto;
+        padding: 15px;
+        position: relative;
+        width: 100%;
+    }
+
+    .name {
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 15px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .but {
+        margin: 10px 0;
+    }
+
+    .home {
+        flex-direction: column;
+        padding-top: 20px;
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .home-left, .home-right {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .home-left img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .home-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .about {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .about-content {
+        width: 90%;
+        height: auto;
+        margin: 0;
+        padding: 25px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        height: 180px;
+        font-size: 35px;
+    }
+
+    .contact-me {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .contact {
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .contact-connect {
+        width: 90%;
+        text-align: center;
+    }
+
+    .contact-connect h1 {
+        font-size: 35px;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 30px;
+        margin: 20px 0;
+    }
+
+    .contact-form {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    textarea, input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .name h1 {
+        font-size: 24px;
+    }
+
+    ul {
+        gap: 12px;
+    }
+
+    .home {
+        margin-top: 40px;
+    }
+
+    .home-left img {
+        max-width: 280px;
+    }
+
+    .home-content {
+        padding: 15px;
+    }
+
+    .home-content h1 {
+        font-size: 26px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .heading h1 {
+        font-size: 28px;
+        margin-top: 60px;
+    }
+
+    .about-content {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .card {
+        height: 150px;
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    .contact-connect h1 {
+        font-size: 28px;
+    }
+
+    .contact-connect p {
+        font-size: 14px;
+    }
+
+    .social-links img {
+        width: 40px;
+    }
+
+    .social-links {
+        gap: 20px;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    .resume-but, .but {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 10px;
+        font-size: 12px;
+    }
+}
